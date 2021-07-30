@@ -1,61 +1,41 @@
-# Everyleaf Task
+# ShopHub
 
-## App Schema
+ShopHub, your onestop shopping experience.
 
-### Models
+## Requirement Definition
 
-#### Model : task
-- belongs_to :user
+The following steps are needed inorder for this application to work.
 
-| Column      |  Description   |
-| ----------- | -------------- |
-| Task_name   | String         |
-| Description | String         |
-| Status      | String         |
-| Priority    | String         |
-| Deadline    | Date           |
+### Development Language
 
-#### Model : user
-- has_many :tasks
+Ruby 3.0.1
+Rails 6.1.4
 
-| Column      |  Description   |
-| ----------- | -------------- |
-| Name        | String         |
-| Email       | String         |
-| Password    | String         |
+### Employment Term Technology
 
-### How to deploy on Heroku
+Devise
+Ajax
 
-#### Creation of the app on heroku
-```
-$ heroku login
-$ heroku create everyleaf-assignment
-$ heroku buildpacks:set heroku/ruby
-$ heroku buildpacks:add --index 1 heroku/nodejs
-```
-#### Compile the app and push it on heroku
-```
-$ rails assets:precompile RAILS_ENV=production
-$ git add -A
-$ git commit -m "message"
-$ git push heroku master
-```
-#### Migration and open app link
-```
-$ heroku run:detached rails db:migrate
-$ heroku open app
-```
-##### List of gems required
-```
-gem 'rails', '~> 6.1.4', '>= 6.1.3.'
-gem 'pg', '~> 1.1'
-gem 'puma', '~> 5.0'
-gem 'sass-rails', '>= 6'
-gem 'webpacker', '~> 5.0'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.7'
-gem 'rexml'
-```
+### Technology outside the curriculum
+
+### Execution Procedure
+
+#### Enter these commands on the terminal
+
+$ git clone https://githttps://github.com/NorahNgatjizeko/GraduationApplication
+$ cd Graduation_task1
+$ bundle install
+$ rails db:create && rails db:migrate
+$ rails s 
+
 ### Catalogue Design
 
 https://docs.google.com/spreadsheets/d/1f3Uzufn7aci5gIf3tGNGlOaY3-LyK0FH0nDYv_HTR8E/edit?usp=sharing
+
+### Table Definition Document
+
+### Wireframe
+
+### Diagram
+
+### Screen Transition Diagram
